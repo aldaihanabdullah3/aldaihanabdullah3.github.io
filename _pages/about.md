@@ -6,13 +6,19 @@ subtitle: Postgraduate Research student at Imperial
 
 profile:
   align: right
-  image: abdullah.jpeg
+  image: profile.png
   image_circular: true # crops the image to make it circular
+  ctas:
+    - label: Google Scholar
+      url: https://scholar.google.com/citations?user=PS_CX0AAAAAJ
+      external: true
+    - label: LinkedIn
+      url: https://www.linkedin.com/in/abdullah-aldaihan-0295ba93/
+      external: true
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
----
 
 
 
