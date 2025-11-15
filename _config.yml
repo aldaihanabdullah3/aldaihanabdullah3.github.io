@@ -24,13 +24,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Abdullah Aldaihan"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "PhD candidate in the Security & Machine Learning Lab at Imperial College London."
+  location         : "London, UK"
+  employer         : "Imperial College London"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "a.aldaihan23@imperial.ac.uk" 
 
   # Academic websites
   academia         : # URL
@@ -38,9 +38,9 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : 
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : 
   researchgate     : # URL
   scopus           : # URL
 
@@ -63,7 +63,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "abdullah-aldaihan-0295ba93"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -147,7 +147,10 @@ og_description           :  # Social media default site image description
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  links:
+    - "https://github.com/aldaihanabdullah3"
+    - "https://www.linkedin.com/in/abdullah-aldaihan-0295ba93/"
+    - "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
 
 
 # Analytics

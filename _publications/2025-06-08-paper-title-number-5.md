@@ -1,13 +1,11 @@
 ---
-title: "Paper Title Number 5, with math $$E=mc^2$$"
+title: "Clouseau: A Hierarchical Multi-Agent Approach for Autonomous Attack Investigation"
 collection: publications
 category: conferences
-permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about a famous math equation, $$E=mc^2$$'
-date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
-paperurl: 'https://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+permalink: /publication/acsac25-clouseau
+excerpt: 'Conference paper accepted to ACSAC ’25.'
+date: 2025-12-12
+venue: 'ACSAC ’25 (to appear)'
+paperurl: 'https://www.doc.ic.ac.uk/~maffeis/papers/acsac25.pdf'
+citation: 'Abdullah Aldaihan, Fahad Alotaibi, and Sergio Maffeis. "Clouseau: A Hierarchical Multi-Agent Approach for Autonomous Attack Investigation." Proceedings of the Annual Computer Security Applications Conference (ACSAC ’25), 2025.'
 ---
-
-Using [MathJax](https://www.mathjax.org/) in the description is supported - $$E=mc^2$$ - however, the use must be mindful that the default delimiters are `$$...$$` and `\\[...\\]` which differs from the `$...$` that is typically expected.
