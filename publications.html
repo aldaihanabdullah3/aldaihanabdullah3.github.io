@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Publications · Abdullah Aldaihan</title>
+    <meta name="description" content="Conference publications by Abdullah Aldaihan">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="wrap">
+          <div class="brand">Abdullah Aldaihan</div>
+          <nav aria-label="Primary">
+            <ul>
+              <li><a href="index.html#bio">About</a></li>
+              <li><a href="index.html#publications">Selected</a></li>
+              <li><a href="publications.html">All Publications</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="section">
+          <h1 class="section-title">Conference Publications</h1>
+          <div class="publications-grid">
+            <article class="pub-card" id="clouseau">
+              <h3>Clouseau: A Hierarchical Multi-Agent Approach for Autonomous Attack Investigation</h3>
+              <p class="pub-meta">Annual Computer Security Applications Conference (ACSAC) '25, Conference Paper (to appear)</p>
+              <p>
+                Abdullah Aldaihan, Fahad Alotaibi, and Sergio Maffeis. Clouseau orchestrates a hierarchy of collaborating LLM agents that mirror
+                the way senior incident responders guide junior analysts. The system automatically triages alerts, correlates signals,
+                and reconstructs timelines, drastically reducing manual investigation effort.
+              </p>
+              <div class="button-row">
+                <a class="btn btn-primary" href="https://www.doc.ic.ac.uk/~maffeis/papers/acsac25.pdf" target="_blank" rel="noopener">Download PDF</a>
+                <a class="btn btn-secondary" href="mailto:a.aldaihan23@imperial.ac.uk">Request Artifacts</a>
+              </div>
+            </article>
+
+            <article class="pub-card" id="poster">
+              <h3>Towards Reproducible Attack Scenarios With Automated Labeling</h3>
+              <p class="pub-meta">ACSAC '25 Poster Track</p>
+              <p>
+                Jiayi Xie, Abdullah Aldaihan, and Sergio Maffeis. Demonstrates an automated labeling pipeline that uses large language models to
+                annotate complex attack traces, ensuring that adversarial datasets can be regenerated consistently for benchmarking and education.
+              </p>
+              <div class="button-row">
+                <a class="btn btn-primary" href="https://www.doc.ic.ac.uk/~maffeis/papers/acsac25p.pdf" target="_blank" rel="noopener">Download PDF</a>
+                <a class="btn btn-secondary" href="https://scholar.google.com/citations?user=PS_CX0AAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        © <span id="year"></span> Abdullah Aldaihan · Hosted on GitHub Pages
+      </footer>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  color-scheme: light;
+  --bg: #f7f8fc;
+  --surface: #ffffff;
+  --text: #141824;
+  --muted: #687080;
+  --border: #e0e4ef;
+  --accent: #2a74ff;
+  --accent-soft: rgba(42, 116, 255, 0.15);
+  --shadow: 0 20px 45px rgba(20, 24, 36, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header .wrap {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.25rem;
+}
+
+nav a {
+  font-weight: 500;
+  color: var(--muted);
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: var(--accent);
+}
+
+main {
+  flex: 1;
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 3rem 1rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.hero-text h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+}
+
+.hero-text p.lead {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin: 0 0 1.25rem;
+}
+
+.hero figure {
+  margin: 0;
+  justify-self: center;
+}
+
+.hero img {
+  width: 260px;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.contact-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(20, 24, 36, 0.05);
+}
+
+.contact-card span {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.contact-card strong {
+  font-size: 1rem;
+}
+
+.section-title {
+  margin: 0 0 2rem;
+  font-size: 1.5rem;
+}
+
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.pub-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 35px rgba(20, 24, 36, 0.06);
+}
+
+.pub-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+}
+
+.pub-meta {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(42, 116, 255, 0.35);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background: #1b57d6;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+  background: rgba(42, 116, 255, 0.25);
+  text-decoration: none;
+}
+
+.site-footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  .contact-card {
+    text-align: center;
+  }
+
+  .button-row {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

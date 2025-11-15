@@ -1,4 +1,4 @@
-name: Build and Deploy Jekyll site
+name: Deploy static site
 
 on:
   push:
@@ -24,11 +24,22 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
+      - name: Prepare site
+        shell: bash
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp publications.html _site/
+          if [ -f robots.txt ]; then cp robots.txt _site/; fi
+          shopt -s nullglob
+          for extra in google*.html; do
+            cp "$extra" _site/
+          done
+          for dir in assets images files; do
+            if [ -d "$dir" ]; then
+              cp -R "$dir" "_site/$dir"
+            fi
+          done
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

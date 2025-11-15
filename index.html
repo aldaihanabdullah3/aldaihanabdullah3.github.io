@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abdullah Aldaihan</title>
+    <meta name="description" content="Abdullah Aldaihan · PhD candidate in the Security & Machine Learning Lab at Imperial College London">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="wrap">
+          <div class="brand">Abdullah Aldaihan</div>
+          <nav aria-label="Primary">
+            <ul>
+              <li><a href="#bio">About</a></li>
+              <li><a href="#publications">Selected Publications</a></li>
+              <li><a href="publications.html">All Publications</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section id="bio" class="section hero">
+          <div class="hero-text">
+            <p class="lead">PhD candidate · Security & Machine Learning Lab, Imperial College London</p>
+            <h1>Systems Security × Machine Learning</h1>
+            <p>
+              Abdullah is a PhD student in the Security & Machine Learning (SML) Lab at Imperial under the supervision of
+              <a href="https://profiles.imperial.ac.uk/sergio.maffeis" target="_blank" rel="noopener">Dr. Sergio Maffeis</a>.
+              He received his MSc in Computer Science from Georgia Tech (2021) and his BSc from King Saud University (2014).
+              His research focuses on applying large language models to automate systems security investigations and threat detection.
+            </p>
+            <div class="button-row">
+              <a class="btn btn-primary" href="mailto:a.aldaihan23@imperial.ac.uk">Email</a>
+              <a class="btn btn-secondary" href="https://scholar.google.com/citations?user=PS_CX0AAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+              <a class="btn btn-secondary" href="https://www.linkedin.com/in/abdullah-aldaihan-0295ba93/" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="btn btn-secondary" href="https://github.com/aldaihanabdullah3" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+          <figure>
+            <img src="images/profile.png" alt="Abdullah Aldaihan portrait">
+          </figure>
+        </section>
+
+        <section class="section">
+          <div class="contact-grid">
+            <div class="contact-card">
+              <span>Location</span>
+              <strong>London, United Kingdom</strong>
+            </div>
+            <div class="contact-card">
+              <span>Lab</span>
+              <strong>Security & Machine Learning Lab</strong>
+            </div>
+            <div class="contact-card">
+              <span>Email</span>
+              <strong>a.aldaihan23@imperial.ac.uk</strong>
+            </div>
+          </div>
+        </section>
+
+        <section id="publications" class="section">
+          <h2 class="section-title">Selected Publications</h2>
+          <div class="publications-grid">
+            <article class="pub-card" id="clouseau">
+              <h3>Clouseau: A Hierarchical Multi-Agent Approach for Autonomous Attack Investigation</h3>
+              <p class="pub-meta">ACSAC '25 (to appear), with Fahad Alotaibi & Sergio Maffeis</p>
+              <p>
+                Introduces Clouseau, an autonomous multi-agent system that coordinates LLM-powered investigators to triage alerts,
+                construct attack narratives, and surface actionable evidence for defenders.
+              </p>
+              <div class="button-row">
+                <a class="btn btn-primary" href="https://www.doc.ic.ac.uk/~maffeis/papers/acsac25.pdf" target="_blank" rel="noopener">Download PDF</a>
+                <a class="btn btn-secondary" href="publications.html#clouseau">Details</a>
+              </div>
+            </article>
+
+            <article class="pub-card" id="acsac-poster">
+              <h3>Towards Reproducible Attack Scenarios With Automated Labeling</h3>
+              <p class="pub-meta">ACSAC '25 Poster Track, with Jiayi Xie & Sergio Maffeis</p>
+              <p>
+                Presents a labeling pipeline that leverages LLM reasoning to annotate adversarial scenarios, enabling reproducible evaluation
+                of AI-driven defense tools and datasets.
+              </p>
+              <div class="button-row">
+                <a class="btn btn-primary" href="https://www.doc.ic.ac.uk/~maffeis/papers/acsac25p.pdf" target="_blank" rel="noopener">Download PDF</a>
+                <a class="btn btn-secondary" href="publications.html#poster">Details</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        © <span id="year"></span> Abdullah Aldaihan · Hosted on GitHub Pages
+      </footer>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
